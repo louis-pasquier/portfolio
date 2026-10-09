@@ -23,6 +23,8 @@ const translations = {
         event4_desc: "Specialisation in software engineering at the school of engineering and architecture of Fribourg (HEIA-FR).",
         event5_title: "Student job as climbing instructor",
         event5_desc: "Teaching weekly climbing lessons at L'Entrepot, Bulle.",
+        event6_title: "Caregiver and Administrative Assistant at a Nursing Home (Civil Service)",
+        event6_desc: "Assisting residents during activities and helping with administrative tasks.",
     },
     fr: {
         pageTitle: "Mon Parcours",
@@ -37,6 +39,8 @@ const translations = {
         event4_desc: "Orientation ingénieurie logicielle à la haute école d'ingénierie et d'architecture de Fribourg (HEIA-FR).",
         event5_title: "Job étudiant comme moniteur d'escalade",
         event5_desc: "Donne des cours hebdomadaires d'escalade à L'Entrepot, Bulle.",
+        event6_title: "Aide animateur et administration dans un EMS (Service Civil)",
+        event6_desc: "Accompagnement des résidents lors des animations ainsi qu'aide aux tâches administratives.",
     }
 };
 
@@ -92,6 +96,7 @@ function Formation({ isDarkMode, language }: { isDarkMode: boolean, language: st
         { id: 3, title: t.event3_title, description: t.event3_desc, startDate: 2022, endDate: 2023 },
         { id: 4, title: t.event4_title, description: t.event4_desc, startDate: 2023, endDate: 2026 },
         { id: 5, title: t.event5_title, description: t.event5_desc, startDate: 2023, endDate: 2026 },
+        { id: 6, title: t.event6_title, description: t.event6_desc, startDate: 2026, endDate: 2027 },
     ];
 
     const containerVariants: Variants = {

@@ -1,20 +1,14 @@
-import { memo, useState } from 'react';
+import { memo } from 'react';
 
 const Resume = memo(function Resume() {
-    const [isLoading, setIsLoading] = useState(true);
-
     return (
-        <div style={{ width: '100%', height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
+        <div style={{ width: '100%', height: '100%', display: 'flex', flexDirection: 'column' }}>
             <title>Resume | Louis Pasquier</title>
             <meta name="description" content="Curriculum Vitae / Resume of Louis Pasquier, Software Engineer." />
-            {isLoading && <p>Loading resume...</p>}
-            <object
-                data={'/resume.pdf'}
-                type="application/pdf"
-                width="100%"
-                height="100%"
-                onLoad={() => setIsLoading(false)}
-                style={{ display: isLoading ? 'none' : 'block' }}
+            <iframe
+                src="/resume.pdf"
+                title="Resume - Louis Pasquier"
+                style={{ width: '100%', height: '100%', border: 'none' }}
             >
                 <div style={{ padding: '2rem', textAlign: 'center' }}>
                     <p>My resume</p>
@@ -25,7 +19,7 @@ const Resume = memo(function Resume() {
                         </a>.
                     </p>
                 </div>
-            </object>
+            </iframe>
         </div>
     );
 });

@@ -60,7 +60,7 @@ const skillsData = [
     {
         categoryKey: "cat1",
         descriptionKey: "desc1",
-        technologies: ["Java", "C++", "Python", "Go", "C#"]
+        technologies: ["Java", "Python", "C++", "Go", "Rust", "C#"]
     },
     {
         categoryKey: "cat2",
