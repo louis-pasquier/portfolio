@@ -1,9 +1,9 @@
-import {type ReactElement, useEffect, useState} from 'react';
+import {type ReactNode, useEffect, useState} from 'react';
 import * as React from "react";
 import darkPolyImage1 from '../assets/low-poly-grid-haikei-dark.svg';
 import darkPolyImage2 from '../assets/low-poly-grid-haikei-light.svg';
 
-export default function PolyBackground({ isDarkMode, children }: { isDarkMode: boolean, children: ReactElement }) {
+export default function PolyBackground({ isDarkMode, children }: { isDarkMode: boolean, children: ReactNode }) {
     const [imageLoaded, setImageLoaded] = useState(false);
     const imageUrl = isDarkMode ? darkPolyImage1 : darkPolyImage2;
 

@@ -44,6 +44,8 @@ function PS5Project({ language, isDarkMode }: { language: string, isDarkMode: bo
 
     return (
         <div style={projectContainer}>
+            <title>PS5: Barcode Scanner Project | Louis Pasquier</title>
+            <meta name="description" content={t.overviewText} />
             <h1 style={title}>{t.title}</h1>
 
             <div style={{...infoBox, ...theme.infoBox}}>

@@ -44,6 +44,8 @@ function PS6Project({ language, isDarkMode }: { language: string, isDarkMode: bo
 
     return (
         <div style={projectContainer}>
+            <title>PS6: Zephyr RTOS Safety Project | Louis Pasquier</title>
+            <meta name="description" content={t.overviewText} />
             <h1 style={title}>{t.title}</h1>
 
             <div style={{...infoBox, ...theme.infoBox}}>

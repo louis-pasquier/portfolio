@@ -106,6 +106,8 @@ function Formation({ isDarkMode, language }: { isDarkMode: boolean, language: st
 
     return (
         <div style={{ ...pageContainer, ...theme.pageContainer }}>
+            <title>{`${t.pageTitle} | Louis Pasquier`}</title>
+            <meta name="description" content={language === 'fr' ? "Parcours académique et professionnel de Louis Pasquier." : "Academic and professional journey of Louis Pasquier."} />
             <h1 style={pageTitle}>{t.pageTitle}</h1>
             <div style={timelineContainer}>
                 <div style={{ ...lineStyle, ...theme.line }}></div>

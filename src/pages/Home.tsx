@@ -47,6 +47,8 @@ export default function Home ({ isDarkMode, language }: { isDarkMode: boolean, l
 
     return (
         <PolyBackground isDarkMode={isDarkMode}>
+            <title>Louis Pasquier | Software Engineer</title>
+            <meta name="description" content="Welcome to the portfolio of Louis Pasquier, Software Engineer." />
             <div style={main}>
                 <div style={contentWrapper}>
                     <div style={titleWrapper}>

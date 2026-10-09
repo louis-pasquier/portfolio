@@ -116,6 +116,8 @@ function Skills({ language, isDarkMode }: { language: string, isDarkMode: boolea
 
     return (
         <div style={styles.container}>
+            <title>{`${t.pageTitle} | Louis Pasquier`}</title>
+            <meta name="description" content={language === 'fr' ? "Compétences techniques et domaines d'expertise de Louis Pasquier." : "Technical skills and areas of expertise of Louis Pasquier."} />
             <h1 style={{ ...styles.pageTitle, ...theme.pageTitle }}>{t.pageTitle}</h1>
             <div style={styles.treeContainer}>
                 {skillsData.map((skill) => (
