@@ -1,4 +1,4 @@
-Options -MultiViews
+Options -MultiViews -Indexes
 
 <IfModule mod_mime.c>
   AddType application/manifest+json .webmanifest
@@ -12,9 +12,8 @@ Options -MultiViews
   RewriteEngine On
   RewriteBase /
 
-  # Serve existing files and directories directly
-  RewriteCond %{REQUEST_FILENAME} -f [OR]
-  RewriteCond %{REQUEST_FILENAME} -d
+  # Serve existing files directly
+  RewriteCond %{REQUEST_FILENAME} -f
   RewriteRule ^ - [L]
 
   # Route all other requests to index.html for client-side SPA routing
