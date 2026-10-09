@@ -1,0 +1,22 @@
+Options -MultiViews
+
+<IfModule mod_mime.c>
+  AddType application/manifest+json .webmanifest
+  AddType application/pdf .pdf
+  AddType image/svg+xml .svg
+  AddType image/png .png
+  AddType image/x-icon .ico
+</IfModule>
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # Serve existing files and directories directly
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+
+  # Route all other requests to index.html for client-side SPA routing
+  RewriteRule ^ index.html [L]
+</IfModule>
